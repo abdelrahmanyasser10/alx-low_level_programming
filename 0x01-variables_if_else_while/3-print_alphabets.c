@@ -11,16 +11,16 @@
 
 int main(void)
 {
-        char alpha;
+	char alpha;
 
-        alpha = 'a';
+	alpha = 'a';
 
-        while (alpha != 123)
-        {
-                putchar(alpha);
-                alpha++;
-        }
-	
+	while (alpha != 123)
+	{
+		putchar(alpha);
+		alpha++;
+	}
+
 	alpha = 'A';
 
 	while (alpha != 91)
@@ -28,6 +28,6 @@ int main(void)
 		putchar(alpha);
 		alpha++;
 	}
-        putchar('\n');
-        return (0);
+	putchar('\n');
+	return (0);
 }
