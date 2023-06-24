@@ -9,11 +9,12 @@
 
 void print_alphabet_x10(void)
 {
-	int i = 0;
+	int i, j;
 
-	while (i < 10)
+	for (i = 0; i < 10; i++)
 	{
-		print_alphabet();
-		i++;
+		for (j = 97; j < 123; j++)
+			_putchar(j);
+		_putchar('\n');
 	}
 }
