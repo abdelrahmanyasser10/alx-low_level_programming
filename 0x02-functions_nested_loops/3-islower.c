@@ -3,6 +3,8 @@
 /**
  * _islower - a function that checks for lowercase character.
  *
+ * parameter c: the letter to be checked whether lowercase or uppercase
+ *
  * Return: 1 if lowercase and 0 otherwise
  */
 
