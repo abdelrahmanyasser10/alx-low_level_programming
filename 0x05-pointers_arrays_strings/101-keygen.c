@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+#include <stdbool.h>
 /**
  * main - entry point 
  *
@@ -15,8 +15,11 @@ int main(void)
 {
 	time_t t;
 	
-	srand((unsigned) time(&t));
-	printf("%d\n", rand());
+	while (true)
+	{
+		srand((unsigned) time(&t));
+		printf("%d\n", rand());
+	}
 
 	return (0);
 }
