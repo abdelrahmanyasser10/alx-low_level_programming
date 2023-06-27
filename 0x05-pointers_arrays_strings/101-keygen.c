@@ -16,10 +16,6 @@ int main(void)
 	time_t t;
 
 	srand((unsigned) time(&t));
-	for (size_t i = 0; i < 10; i++)
-	{
-		printf("%d\n", rand());
-	}
+	printf("%d\n", rand());
 
 	return (0);
-}
