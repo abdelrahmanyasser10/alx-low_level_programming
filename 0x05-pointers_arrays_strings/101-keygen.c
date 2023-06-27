@@ -14,10 +14,10 @@
 int main(void)
 {
 	time_t t;
-	
-	while (true)
+
+	srand((unsigned) time(&t));
+	for (size_t i = 0; i < 10; i++)
 	{
-		srand((unsigned) time(&t));
 		printf("%d\n", rand());
 	}
 
