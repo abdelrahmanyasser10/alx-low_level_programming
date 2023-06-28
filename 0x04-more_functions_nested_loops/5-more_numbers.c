@@ -3,9 +3,10 @@
 /**
  * more_numbers - a function that prints 10 times the numbers, from 0 to 14,
  * followed by a new line.
- * 
+ *
  * Return: nothing
  */
+
 void more_numbers(void)
 {
 	int i, m;
@@ -21,7 +22,7 @@ void more_numbers(void)
 				_putchar('0' + (i <= 14 ? 1 : -38));
 				if (i == 15)
 					break;
-				_putchar('0' + i - 10);
+				_putchar('0' + (i - 10));
 			}
 		}
 	}
