@@ -16,9 +16,9 @@ int _strcmp(char *s1, char *s2)
 
 	while (m == 0)
 	{
-		if(*(s1 + i) == '\0' && *(s2 + i) == '\0')
+		if (*(s1 + i) == '\0' && *(s2 + i) == '\0')
 			break;
-		m = *(s1 + i) - *(s2 +i);
+		m = *(s1 + i) - *(s2 + i);
 		i++;
 	}
 
