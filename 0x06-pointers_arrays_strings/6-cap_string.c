@@ -3,7 +3,7 @@
 /**
  * cap_string - a function that capitalizes all words of a string.
  *
- * @str: string
+ * @a: character
  *
  * Return: string after capitaliztion
  */
@@ -14,11 +14,13 @@ char *cap_string(char *str)
 {
 	int i = 0;
 
-	while(*(str + i) != '\0')
+	while (*(str + i) != '\0')
 	{
-		if (i == 0 && !(isSeparator(*(str + i))) && *(str + i) >= 97 && *(str + i) <= 122)
+		if (i == 0 && !(isSeparator(*(str + i))) && *(str + i) >= 97
+				&& *(str + i) <= 122)
 			*(str + i) -= 32;
-		else if(isSeparator(*(str + i - 1)) && *(str + i) >= 97 && *(str + i) <= 122)
+		else if (isSeparator(*(str + i - 1)) && *(str + i) >= 97
+				&& *(str + i) <= 122)
 			*(str + i) -= 32;
 		i++;
 	}
@@ -29,7 +31,7 @@ char *cap_string(char *str)
  * isSeparator - a function checks whether the string character is
  * a word separator or not
  *
- * @a:  the character
+ * @a: character
  *
  * Return: 1 if true
  * 0 if not true
