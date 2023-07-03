@@ -17,10 +17,10 @@ unsigned int _strspn(char *s, char *accept)
 	while (*(s + i) != '\0')
 	{
 		if (!(strchr(accept, *(s + i))))
-				break;
+			break;
 		i++;
 	}
-	
+
 	if (*(s + i) == '\0')
 		return (0);
 	else
