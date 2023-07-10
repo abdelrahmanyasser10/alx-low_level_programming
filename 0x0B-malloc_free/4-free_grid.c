@@ -5,6 +5,7 @@
  * by your alloc_grid function.
  *
  * @height: array height
+ * @grid: 2 dimensional grid
  *
  * Return: nothing
  */
