@@ -17,7 +17,7 @@ char **strtow(char *str)
 	int i, j, k, word_count, word_length;
 	char **words;
 
-	if (str == NULL || str[0] == '\0' || (str[0] == ' ' && str[1] == '\0'))
+	if (str == NULL || str[0] == '\0' || (IS_SEPARATOR(str[0]) && str[1] == '\0'))
 		return (NULL);
 	word_count = 0;
 	for (i = 0; str[i] != '\0'; i++)
