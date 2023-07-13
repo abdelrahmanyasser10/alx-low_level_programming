@@ -14,10 +14,19 @@
  */
 char **strtow(char *str)
 {
-	int i, j, k, word_count, word_length;
+	int i, j, k, word_count, word_length, all_separators;
 	char **words;
 
-	if (str == NULL || str[0] == '\0' || (IS_SEPARATOR(str[0]) && str[1] == '\0'))
+	all_separators = 1;
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if (!IS_SEPARATOR(str[i]))
+		{
+			all_separators = 0;
+			break;
+		}
+	}
+	if (str == NULL || str[0] == '\0' || all_separators)
 		return (NULL);
 	word_count = 0;
 	for (i = 0; str[i] != '\0'; i++)
