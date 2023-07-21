@@ -24,13 +24,13 @@ int main(int argc, char *argv[])
 	b = atoi(argv[3]);
 	op = argv[2];
 
-	if (!IS_OPERATOR(op[0]) || strlen(op) != 1)
+	if (!IS_OPERATOR(op) || strlen(op) != 1)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	if ((op[0] == '/' || op[0] == '%') && b == 0)
+	if ((strcmp(op, "/") == 0 || strcmp(op, "%") == 0) && b == 0)
 	{
 		printf("Error\n");
 		exit(100);

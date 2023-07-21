@@ -6,8 +6,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+#define IS_OPERATOR(c) (strcmp((c), "+") == 0 || strcmp((c), "-") == 0 || strcmp((c), "*") == 0 || strcmp((c), "/") == 0 || strcmp((c), "%") == 0)
 
-#define IS_OPERATOR(c) ((c) == '+' || (c) == '-' || (c) == '*' || (c) == '/' || (c) == '%')
 
 /**
  * struct op - Struct op
