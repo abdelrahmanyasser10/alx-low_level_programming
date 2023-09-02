@@ -8,7 +8,7 @@
  * @argv: array of arguments
  * @argc: length of argv
  *
- * return: 0
+ * Return: 0
  */
 
 int main(int argc, char **argv)
@@ -23,14 +23,13 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (1);
 	}
-	
 
 	cents = atoi(argv[1]);
 	if (cents < 0)
-        {
-                printf("0\n");
-                return (0);
-        }
+	{
+		printf("0\n");
+		return (0);
+	}
 
 	coins[0] = 25;
 	coins[1] = 10;
@@ -41,12 +40,12 @@ int main(int argc, char **argv)
 
 	while (cents != 0)
 	{
-		for(i = 0; i < 5; i++)
+		for (i = 0; i < 5; i++)
 		{
 			if (cents >= coins[i])
 				break;
 		}
-		
+
 		cents = cents - coins[i];
 		number_of_coins++;
 	}
